@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container page-header-flex">
+        <nav class="page-header__nav">
+          <a href="./" class="logo">
+            <span class="logo--color">Web</span>Studio
+          </a>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Studio</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
+                >Portfolio</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-nav">
+          <li class="contacts-nav__item">
+            <a href="mailto:info@devstudio.com" class="contacts-nav__link">
+              <svg class="contacts-nav__icon contacts-nav__icon--envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts-nav__item">
+            <a href="+380961111111" class="contacts-nav__link">
+              <svg class="contacts-nav__icon contacts-nav__icon--mobile">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Portfolio</h1>
+
+          <!-- Радио-кнопки -->
+          <ul class="filters-list">
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">All</button>
+            </li>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">
+                Website
+              </button>
+            </li>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">
+                Apps
+              </button>
+            </li>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">Graphic</button>
+            </li>
+            <li class="filters-list__item">
+              <button type="button" class="filters-list__button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+
+          <!-- Портфолио -->
+          <ul class="portfolio-list">
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="
+                      ./images/technokrjak.jpg    1x,
+                      ./images/technokrjak-2x.jpg 2x
+                    "
+                    src="./images/technokrjak.jpg"
+                    alt="Технокряк"
+                  />
+                  <h3 class="product__descr">
+                    TechBreak is a platform that allows to browse Internet securely by hiding your IP
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">TechBreak</h2>
+                  <p class="product__type">Website</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="
+                      ./images/new-orlean.jpg    1x,
+                      ./images/new-orlean-2x.jpg 2x
+                    "
+                    src="./images/new-orlean.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                  />
+                  <h3 class="product__descr">
+                    An illustrative set of assets created for the basketball event
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">
+                    Poster Design New Orleans VS Golden Star
+                  </h2>
+                  <p class="product__type">Graphic</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="./images/seafood.jpg 1x, ./images/seafood-2x.jpg 2x"
+                    src="./images/seafood.jpg"
+                    alt="Ресторан Seafood"
+                  />
+                  <h3 class="product__descr">
+                    An app that allows users to browse restaurants menu and special offers and book a table in real time
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">Seafood restaurant</h2>
+                  <p class="product__type">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="./images/prime.jpg 1x, ./images/prime-2x.jpg 2x"
+                    src="./images/prime.jpg"
+                    alt="Проект Prime"
+                  />
+                  <h3 class="product__descr">
+                    Prime is the marketing project for a hi-tech headphones local product launch 
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">Prime Project</h2>
+                  <p class="product__type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x"
+                    src="./images/boxes.jpg"
+                    alt="Проект Boxes"
+                  />
+                  <h3 class="product__descr">
+                    A set of packaging created for local craft sweets bar
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">Packaging</h2>
+                  <p class="product__type">Graphic</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="
+                      ./images/inspiration.jpg    1x,
+                      ./images/inspiration-2x.jpg 2x
+                    "
+                    src="./images/inspiration.jpg"
+                    alt="Inspiration has no Borders"
+                  />
+                  <h3 class="product__descr">
+                    Website of a luxury travel agency to inspire people travel to a not standard destination
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">Inspiration has no Borders</h2>
+                  <p class="product__type">Website</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="./images/limited.jpg 1x, ./images/limited-2x.jpg 2x"
+                    src="./images/limited.jpg"
+                    alt="Издание Limited Edition"
+                  />
+                  <h3 class="product__descr">
+                    Editorial design for travel magazine for young and active people
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">Editorial</h2>
+                  <p class="product__type">Graphic</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
+                    src="./images/lab.jpg"
+                    alt="Проект LAB"
+                  />
+                  <h3 class="product__descr">
+                    Marketing launch of a sustainable fashion brand
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">LAB project</h2>
+                  <p class="product__type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product__link">
+                <div class="product__thumb">
+                  <img
+                    class="product__img"
+                    srcset="
+                      ./images/business.jpg    1x,
+                      ./images/business-2x.jpg 2x
+                    "
+                    src="./images/business.jpg"
+                    alt="Growing Business"
+                  />
+                  <h3 class="product__descr">
+                    Analytics web based application for monitoring your company
+                  </h3>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__name">Growing Business</h2>
+                  <p class="product__type">Website</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Мобильное меню-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          width="40px"
+          height="40px"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <div class="mobile-wrapper">
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link"> Studio </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              href="./portfolio.html"
+              class="mobile-menu__link mobile-menu__link--current"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a href="+380961111111" class="mobile-contacts__tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container flex-footer">
+        <div class="footer-box">
+          <div class="footer-address">
+            <a href="./" class="logo footer__logo">
+              <span class="logo--color">Web</span>Studio
+            </a>
+            <address>
+              <p class="footer-address__text">
+                Kyiv, Lesi Ukrainiki Boulevard 12
+              </p>
+              <ul class="footer-address__list">
+                <li class="footer-address__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-address__contacts"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a href="tel:+380991111111" class="footer-address__contacts"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer__title">Follow Us</h3>
+            <ul class="social-list footer__social-list">
+              <li>
+                <a
+                  class="social-list__link social-list__link--color"
+                  href="#"
+                  aria-label="instagram link"
+                >
+                  <svg class="social-list__icon" width="44px" height="49px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-list__link social-list__link--color"
+                  href="#"
+                  aria-label="twitter link"
+                >
+                  <svg class="social-list__icon" width="44px" height="49px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-list__link social-list__link--color"
+                  href="#"
+                  aria-label="facebook link"
+                >
+                  <svg class="social-list__icon" width="44px" height="49px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-list__link social-list__link--color"
+                  href="#"
+                  aria-label="linkedin link"
+                >
+                  <svg class="social-list__icon" width="44px" height="49px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-sign">
+          <b class="footer__title">Sign up to our newsletter</b>
+          <form class="js-speaker-form footer-form">
+            <input
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              class="footer-form__input"
+            />
+
+            <button type="submit" class="button footer__button">
+              <span>Follow</span>
+              <svg class="footer-form__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>
